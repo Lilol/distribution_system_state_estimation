@@ -1,0 +1,14 @@
+#
+####### requirements.txt #######
+#
+numpy
+pandas
+plotly
+matplotlib
+openpyxl
+configparser
+scipy
+psutil
+pandapower
+numba
+seaborn
