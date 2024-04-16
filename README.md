@@ -1,5 +1,5 @@
-# distribution_system_state_estimation
-Low voltage distribution system state estimation.
+# Distribution System State Estimation
+This repository contains Python scripts for low voltage distribution system state estimation. The codes cover all modeling steps, such as reading the network parameter files, building the network models from these files, and calling the weighted least squares method for various scenarios, validating the WLS using power-flow equations, evaluating the error metrics, and creating the comparisons.
 
 # Required Python distribution
 Before running the scripts, please install a Python distribution with version 3.9 or higher.
@@ -14,12 +14,12 @@ To set the parameters of the script, edit the configuration file in config\confi
 # Scripts
 ## Running the state estimation
 This command will run the state estimation process, as well as the validation power-flow process for the time steps specified in the configuration file.
-Outputs are generated in the folder specified in the [files] output= option of the config file.
+Outputs are generated in the folder specified in the [paths] output_path= option of the config file.
 
 > python main.py
 
 ## Running the post-evaluation
-This command will run the evaluation and configuration process, and computes the specified performance indices.
-Outputs are generated in the folder specified in the [files] output= option of the config file.
+This command will run the evaluation and configuration process and compute the specified performance indices.
+Outputs are generated in the folder specified in the [paths] output_paths= option of the config file.
 
 > python evaluation\main.py
